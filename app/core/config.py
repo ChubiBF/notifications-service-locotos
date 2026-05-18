@@ -5,7 +5,7 @@ load_dotenv()
 
 class Settings:
     PROJECT_NAME: str = "Locotos Notification Service"
-    PORT: int = int(os.getenv("PORT", 4000))
+    PORT: int = int(os.getenv("PORT", 3003))
     
     REDIS_HOST: str = os.getenv("REDIS_HOST", "localhost")
     REDIS_PORT: int = int(os.getenv("REDIS_PORT", 6379))
